@@ -13,7 +13,10 @@ router.post("/api/notes", function(req, res) {
     console.log("req.body:", req.body);
 
     connection.query("INSERT INTO notes SET ?", req.body, function(err, result) {
-      if (err) throw err;
+      if (err) {
+        console.log(err);
+        return false;
+      }
       res.json(result);
     });
 });
@@ -22,7 +25,10 @@ router.post("/api/notes", function(req, res) {
 router.delete("/api/notes/:noteId", function(req, res) {
   console.log(req.params.noteId);
   connection.query("DELETE FROM notes WHERE id=?", [req.params.noteId], function(err, result) {
-    if (err) throw err;
+    if (err) {
+      console.log(err);
+      return false;
+    }
     res.json(result);
   });
 });
@@ -32,7 +38,10 @@ router.put("/api/notes/:noteId", function(req, res) {
     console.log("req.body:", req.body);
 
     connection.query("UPDATE notes SET ? WHERE id=?", [req.body, req.params.noteId], function(err, result) {
-      if (err) throw err;
+      if (err) {
+        console.log(err);
+        return false;
+      }
       res.json(result);
     });
 });
