@@ -13,13 +13,13 @@ VALUES
   INSERT INTO notes
   (title, note)
 VALUES
-  ('to-do-list', 'Laundry, Cooking, Plumbing',);
+  ('to-do-list', 'Laundry, Cooking, Plumbing');
   
   INSERT INTO notes
   (title, note)
 VALUES
-  ('visit Tample', 'Visiting Tample with Friends',);
+  ('visit Tample', 'Visiting Tample with Friends');
 
 
 
-SELECT * FROM notes
+SELECT * FROM notes;

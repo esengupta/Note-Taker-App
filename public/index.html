@@ -2,38 +2,66 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Note Taker</title>
 
   <!-- Latest compiled and minified CSS -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css">
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="assets/css/styles.css"/>
+    <script src="assets/js/notes.js"></script>
 
 </head>
+
 <body>
+  <!--navbar-->
+  
+  <nav class="navbar navbar-expand-md bg-dark navbar-dark">
+      
+      <a class="navbar-brand" href="#">Note Taker</a>
+    
+      <!-- Toggler/collapsibe Button -->
+      <!-- <button class="btn btn-danger btn-new-note">Add Note</button>
+        <div class="icons">
+          <i class="fa fa-save" aria-hidden="true" data-toggle="popover" data-placement="bottom" data-trigger="focus"></i>
+          <i class="fa fa-pencil" aria-hidden="true" data-toggle="popover" data-placement="bottom" data-trigger="focus" data-content="for edit click enter"></i>
+        </div> -->
+  </nav> 
 
   <div class="container">
-
-    <div class="jumbotron">
-      <h1 class="text-center"><span class="fa fa-fire"></span> Note Taker</h1>
+      <div class="row">
+          <div class="col-md-12">
+              <div class="header-panel">
+      <h1><span role="img" aria-label="Memo">📝</span> Note Taker</h1>
       <hr>
-      <h2 class="text-center">Take notes with Express and MySQL!</h2>
-      <br>
+      <h2> Take notes with Express and MySQL!</h2>
+      
 
-      <div class="text-center">
-        <a href="/tables" class="btn btn-lg btn-primary"><span class="fa fa-list-alt"></span> View Tables</a>
-        <a href="/reserve" class="btn btn-lg btn-danger"><span class="fa fa-credit-card"></span> Get Started</a>
+      <div id="btn-group" class="text-center">
+          <a href="/notes"><button class="btn btn-lg btn-primary">Get Started</button></a>
+        </div>
       </div>
-
+    </div>
     </div>
 
-    <footer class="footer">
-      <div class="container">
-        <!-- <p><a href="/api/tables">API Table Link</a> | <a href="/api/waitlist">API Wait List</a> -->
-      </div>
-    </footer>
+    <footer class="footer text-center">
+        <div class="footerContainer">
+      
+          <p><a href="https://esengupta.github.io/Note-Taker-App/">GitHub Repo-esengupta</a>
+            <br>@ 2018 Enakshi </p>
+      
+        </div>
+      </footer> 
 
   </div>
 
 
 </body>
 </html>
+
+
+
