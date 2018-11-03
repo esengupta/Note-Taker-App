@@ -6,10 +6,9 @@ body{
 
 .navbar{
   position: relative;
-  margin: 0;
   background-color: teal;
   border-color: teal;
-  height: 80px;
+  height: 60px;
   color: #FFF;
 }
 
@@ -118,7 +117,7 @@ hr {
 
 .list-group-item span{
   font-size: 1.7rem;
-  color: #757575;
+  color: gray;
 }
 
 .list-group-item i {

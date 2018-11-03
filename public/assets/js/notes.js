@@ -54,8 +54,7 @@ $(document).ready(function(){
                 }));
             }
           });
-          /**********************************************/
-
+         
           /* On Note click, display Note on the page */
           listItem = $('#sortable li span');
 
@@ -70,8 +69,7 @@ $(document).ready(function(){
             newNote = false;
             newNoteBtn.css("display","block");
           });
-          /***************************************************/
-
+          
           /* Delete certain Note */
           deleteIcons = $('ul.list-group li.list-group-item i.fa-trash');
 
@@ -88,7 +86,7 @@ $(document).ready(function(){
               newNote = true;
               newNoteBtn.css("display","none");
           });
-          /***************************************/
+         
         });
     }
 

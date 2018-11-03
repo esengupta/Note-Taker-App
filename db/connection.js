@@ -24,6 +24,7 @@ connection.config.typeCast = function(field, next) {
     return field.string() == "1"; // 1 = true, 0 = false
   }
   return next();
+  
 };
 
 module.exports = connection;
