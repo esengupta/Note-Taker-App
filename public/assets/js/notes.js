@@ -15,7 +15,7 @@ $(document).ready(function () {
   $('i.fa-pencil').popover();
   editPopOverShow();
   $('i.fa-save').popover();
-  /*******************/
+  
 
   function getRecords(route) {
     let apiUrl = `/api/${route}`,
@@ -43,8 +43,9 @@ $(document).ready(function () {
       });
 
       // JQuery UI draggable library for each Note in the List
-      $("#sortable").sortable();
+      
       $("#sortable").disableSelection();
+      $("#sortable").sortable();
 
       /*This logs an array of all the items in the sortable UL with their id's and their current indexes*/
       $('#sortable').sortable({
@@ -201,8 +202,7 @@ $(document).ready(function () {
     writeIcon.css("display", "block");
     editPopOverShow();
 
-    // $('#note-title').prop("readonly", true);
-    // $('#note-text').prop("readonly", true);
+    
 
   });
 });
