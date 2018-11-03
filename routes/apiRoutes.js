@@ -9,7 +9,7 @@ router.get("/api/notes", function(req, res) {
 });
 
 //Add new Note
-router.post("/api/addNote", function(req, res) {
+router.post("/api/notes", function(req, res) {
     console.log("req.body:", req.body);
 
     connection.query("INSERT INTO notes SET ?", req.body, function(err, result) {
@@ -21,14 +21,14 @@ router.post("/api/addNote", function(req, res) {
 //Delete Note
 router.delete("/api/notes/:noteId", function(req, res) {
   console.log(req.params.noteId);
-  connection.query("DELETE FROM notes WHERE id=?", req.params.noteId, function(err, result) {
+  connection.query("DELETE FROM notes WHERE id=?", [req.params.noteId], function(err, result) {
     if (err) throw err;
     res.json(result);
   });
 });
 
 //Update existing Note
-router.post("/api/addNote/:noteId", function(req, res) {
+router.put("/api/notes/:noteId", function(req, res) {
     console.log("req.body:", req.body);
 
     connection.query("UPDATE notes SET ? WHERE id=?", [req.body, req.params.noteId], function(err, result) {

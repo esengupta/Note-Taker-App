@@ -35,6 +35,11 @@ body{
   top: 50%;
   transform: translate(88vw, -50%);
 }
+.list-group-item i.fa-arrows-v{
+  float: none;
+  padding-right: 15px;
+  font-size: inherit;
+}
 
 .popover-content {
     color: black;
@@ -48,11 +53,7 @@ body{
   display: block;
 }
 
-.list-group-item i.fa-arrows-v{
-  float: none;
-  padding-right: 15px;
-  font-size: inherit;
-}
+
 
 .header-panel{
   margin: 0;
