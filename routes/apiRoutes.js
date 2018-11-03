@@ -1,16 +1,16 @@
 let router = require("express").Router();
 let connection = require("../db/connection");
 
-//Get all Notes
+//Get all Notes//
 router.get("/api/notes", function(req, res) {
     connection.query("SELECT * FROM notes", function(err, data) {
       res.json(data);
     });
 });
 
-//Add new Note
+//Add New Note//
 router.post("/api/notes", function(req, res) {
-    console.log("req.body:", req.body);
+  console.log("req.body:", req.body);
 
     connection.query("INSERT INTO notes SET ?", req.body, function(err, result) {
       if (err) {
@@ -21,7 +21,7 @@ router.post("/api/notes", function(req, res) {
     });
 });
 
-//Delete Note
+//Delete Note//
 router.delete("/api/notes/:noteId", function(req, res) {
   console.log(req.params.noteId);
   connection.query("DELETE FROM notes WHERE id=?", [req.params.noteId], function(err, result) {
@@ -33,7 +33,7 @@ router.delete("/api/notes/:noteId", function(req, res) {
   });
 });
 
-//Update existing Note
+//Update Note//
 router.put("/api/notes/:noteId", function(req, res) {
     console.log("req.body:", req.body);
 

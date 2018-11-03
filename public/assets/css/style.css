@@ -1,13 +1,13 @@
 body{
   background-color:gray;
-  margin: 10px;
-  padding: 10px;
+  margin: 5px;
+  padding: 15px;
 }
 
 .navbar{
   position: relative;
   height: 60px;
-  color: aqua;
+  /* color: aqua; */
 }
 
 .navbar-brand{
@@ -15,12 +15,12 @@ body{
 }
 
 
-
 .icons{
-  font-size: 4rem;
+  font-size: 6rem;
   position: absolute;
   top: 50%;
   transform: translate(5px, 5px);
+  color: white;
 }
 
 .icons:hover{
@@ -31,7 +31,7 @@ body{
   display: none;
   position: absolute;
   top: 50%;
-  transform: translate(88vw, -50%);
+  transform: translate(-50%, 50%);
 }
 .list-group-item i.fa-arrows-v{
   float: none;
@@ -56,7 +56,7 @@ body{
 
 .header-panel{
   margin: 0;
-  width: 100%;
+  width: 120%;
   background-color:#e9ecef;
   border-radius: 10px;
   position: absolute;
@@ -65,11 +65,11 @@ body{
   transform: translate(-50%, 50%);
 }
 .header-panel h1{
-  font-size: 6rem;
+  font-size: 80px;
 }
 
 .header-panel h2{
-  font-size: 3.5rem;
+  font-size: 50px;
 }
 
 .header-panel h1, .header-panel h2{
@@ -78,12 +78,12 @@ body{
 }
 
 .header-panel h1{
-  padding: 50px 0 20px 0;
+  padding: 60px;
   margin-top: auto;
 }
 
 .header-panel h2{
-  padding-bottom: 30px;
+  padding-bottom: 50px;
 }
 
 a, a:hover {
@@ -98,15 +98,15 @@ hr {
 }
 
 #btn-group{
-  padding: 0 0 50px 0;
+  padding: 70px;
 }
 
 .border-right{
-  border-right: 1px solid rgba(0,0,0,0.125);
+  border-right: 1px solid rgba(128, 128, 128, 0.925);
 }
 
 .main-container div{
-  height: calc(100vh - 70.38px);
+  height: 70px;
   padding: 0;
 }
 
@@ -152,6 +152,6 @@ hr {
 
 .footerContainer {
 	font-size: 15px;
-	padding: 10px;
-	margin-top: 40px;
+	padding: 850px;
+  margin-bottom: 50px;
 }
