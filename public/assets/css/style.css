@@ -6,8 +6,6 @@ body{
 
 .navbar{
   position: relative;
-  background-color:rgba(255, 166, 0, 0.562);
-  border-color: orange;
   height: 60px;
   color: aqua;
 }
