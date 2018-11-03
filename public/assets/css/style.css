@@ -1,13 +1,13 @@
 body{
-  background-color: #FFF;
+  background-color:gray;
   margin: 10px;
   padding: 10px;
 }
 
 .navbar{
   position: relative;
-  background-color: teal;
-  border-color: teal;
+  background-color:rgba(255, 166, 0, 0.562);
+  border-color: orange;
   height: 60px;
   color: #FFF;
 }
@@ -42,7 +42,7 @@ body{
 }
 
 .popover-content {
-    color: black;
+    color: blue;
 }
 
 .fa-save{
