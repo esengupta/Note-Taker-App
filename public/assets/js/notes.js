@@ -139,13 +139,13 @@ $(document).ready(function () {
     savePopOverShow();
   });
 
-  //shows edit popOver for 5 secs
+  //shows edit popOver for 10 secs
   function editPopOverShow() {
     $('i.fa-save').popover('hide');
     $('i.fa-pencil').popover('show');
     editPopOverTimeout = setTimeout(function () {
       $('i.fa-pencil').popover('hide');
-    }, 5000);
+    }, 10000);
   }
 
   //shows save PopOVer for 15 secs

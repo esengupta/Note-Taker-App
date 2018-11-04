@@ -7,11 +7,7 @@ body{
 .navbar{
   position: relative;
   height: 60px;
-  /* color: aqua; */
-}
 
-.navbar-brand{
-  color: aqua !important;
 }
 
 
@@ -49,10 +45,8 @@ body{
 
 .fa-pencil{
   display: block;
-  color: aquamarine;
+  
 }
-
-
 
 .header-panel{
   margin: 0;
@@ -129,7 +123,6 @@ hr {
 .note-title, .note-title:focus, .note-text, .note-text:hover{
   padding-left: 40px;
   width: 150%;
-  /* //none// */
   border: 1px; 
   outline: 1px;
 }
