@@ -16,10 +16,10 @@ body{
 
 
 .icons{
-  font-size: 6rem;
+  font-size: 8rem;
   position: absolute;
   top: 50%;
-  transform: translate(5px, 5px);
+  transform: translate(15px, 15px);
   color: white;
 }
 
@@ -127,22 +127,24 @@ hr {
 }
 
 .note-title, .note-title:focus, .note-text, .note-text:hover{
-  padding-left: 34px;
-  width: 100%;
-  border: none;
-  outline: none;
+  padding-left: 40px;
+  width: 150%;
+  /* //none// */
+  border: 1px; 
+  outline: 1px;
 }
 
 .note-title{
   height: 65px;
-  margin-top: 13px;
+  margin-top: 15px;
   font-size: 6rem;
 }
 
 .note-text{
-  height: calc(100% - 63px);
+  height: 65px;
+  margin-top: 15px;
   padding-top: 15px;
-  color: #757575;
+  color: gray;
 }
 
 .footer {
