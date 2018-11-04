@@ -3,15 +3,15 @@ $(document).ready(function () {
     saveIcon = $('.fa-save'),
     newNoteBtn = $('.btn-new-note'),
     noteId = 1,
-    chosenEditNoteId,
     editMode = false,
     newNote = true,
-    deleteIcons = '',
     listItem = '',
-    editPopOverTimeout = '',
     savePopOverTimeout = '';
+    editPopOverTimeout = '',
+    deleteIcons = '',
+    chosenEditNoteId,
 
-  /** Adding PopOver on 'Save' & 'Edit' buttons in Navbar**/
+  //  Adding PopOver on Save & Edit buttons in Navbar..
   $('i.fa-pencil').popover();
   editPopOverShow();
   $('i.fa-save').popover();
@@ -32,7 +32,7 @@ $(document).ready(function () {
                                 <span>${obj.title}</span><i class="fa fa-trash text-danger" aria-hidden="true"></i>
                                 </li>`);
 
-          //Binding object data to LI element
+          //data binding to LI element
           $(`li#${obj.id}`).data({
             "id": obj.id,
             "note": obj.note,
@@ -47,7 +47,7 @@ $(document).ready(function () {
       $("#sortable").disableSelection();
       $("#sortable").sortable();
 
-      /*This logs an array of all the items in the sortable UL with their id's and their current indexes*/
+      // This logs an array of all the items in the sortable UL with their id's and their current index
       $('#sortable').sortable({
         stop: function (e, ui) {
           console.log($.map($(this).find('li'), function (el) {
@@ -56,7 +56,7 @@ $(document).ready(function () {
         }
       });
 
-      /* On Note click, display Note on the page */
+      //  display Note on the page--On Note click
       listItem = $('#sortable li span');
 
       listItem.click(function () {
@@ -91,7 +91,7 @@ $(document).ready(function () {
     });
   }
 
-  //Get all Notes in MySql DB
+  //Get all Notes---MySql DB
   getRecords("notes");
 
   function saveRecord(route, record, method) {
@@ -111,7 +111,7 @@ $(document).ready(function () {
         }
 
         if (newNote) {
-          // Clear the form when submitting
+          // Clear the txt when submitting
           clearForm();
         }
       });
@@ -139,16 +139,16 @@ $(document).ready(function () {
     savePopOverShow();
   });
 
-  //Displays edit popOver for 10 secs
+  //shows edit popOver for 5 secs
   function editPopOverShow() {
     $('i.fa-save').popover('hide');
     $('i.fa-pencil').popover('show');
     editPopOverTimeout = setTimeout(function () {
       $('i.fa-pencil').popover('hide');
-    }, 10000);
+    }, 5000);
   }
 
-  //Displays save PopOVer for 15 secs
+  //shows save PopOVer for 15 secs
   function savePopOverShow() {
     $('i.fa-pencil').popover('hide');
     $('i.fa-save').popover('show');
