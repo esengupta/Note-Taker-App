@@ -6,10 +6,10 @@ $(document).ready(function () {
     editMode = false,
     newNote = true,
     listItem = '',
-    savePopOverTimeout = '';
+    savePopOverTimeout = '',
     editPopOverTimeout = '',
     deleteIcons = '',
-    chosenEditNoteId,
+    chosenEditNoteId;
 
   //  Adding PopOver on Save & Edit buttons in Navbar..
   $('i.fa-pencil').popover();
@@ -192,7 +192,7 @@ $(document).ready(function () {
       url = `/api/notes`;
       method = "POST"
     } else if (!newNote) {
-      url = `/api/addNote/${chosenEditNoteId}`;
+      url = `/api/notes/${chosenEditNoteId}`;
       method = "PUT"
     }
 
