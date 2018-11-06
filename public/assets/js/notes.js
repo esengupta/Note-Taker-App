@@ -32,7 +32,7 @@ $(document).ready(function () {
                                 <span>${obj.title}</span><i class="fa fa-trash text-danger" aria-hidden="true"></i>
                                 </li>`);
 
-          //data binding to LI element
+       
           $(`li#${obj.id}`).data({
             "id": obj.id,
             "note": obj.note,
@@ -56,7 +56,7 @@ $(document).ready(function () {
         }
       });
 
-      //  display Note on the page--On Note click
+      //  display Note on the page
       listItem = $('#sortable li span');
 
       listItem.click(function () {
@@ -139,7 +139,7 @@ $(document).ready(function () {
     savePopOverShow();
   });
 
-  //shows edit popOver for 10 secs
+  // edit popOver for 10 secs
   function editPopOverShow() {
     $('i.fa-save').popover('hide');
     $('i.fa-pencil').popover('show');
@@ -148,7 +148,7 @@ $(document).ready(function () {
     }, 10000);
   }
 
-  //shows save PopOVer for 15 secs
+  // save PopOVer for 15 secs
   function savePopOverShow() {
     $('i.fa-pencil').popover('hide');
     $('i.fa-save').popover('show');
@@ -176,7 +176,7 @@ $(document).ready(function () {
     }
   };
 
-  //Save new or Update existing Note
+  //Save new note
   saveIcon.click(function (event) {
     let url,
       note,
